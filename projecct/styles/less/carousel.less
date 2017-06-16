@@ -1,0 +1,54 @@
+.carousel{
+    background: #337ab7;
+    max-height: 300px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+
+	.width-under(600px,{
+        max-height: 263px;
+        overflow:hidden;
+	 });
+
+	ul{
+		min-height:250px;
+		li{
+		    padding:0;			
+			overflow:hidden;
+			opacity:0;
+			transition:opacity, display 4s;
+			display:none;
+			&.active{
+				opacity:1;
+				display:block;
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+	.controls{
+		position: absolute;
+	    background:#fafafa;
+	    bottom: 0;
+	    left: 010%;
+	    z-index: 99999;
+	    width: 54px;
+	    height: 32px;
+		a{
+			font-size: 24px;
+    		color: #337ab7;
+    		&.left {
+			    position: absolute;
+			    left: 12px;
+			    top: 3px;
+			}
+			&.right {
+			    position: absolute;
+			    right: 12px;
+			    top: 3px;
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+#bdsharma{
+	footer{
+		.policy{
+			background:#fff;
+			text-align: center;
+    		padding-top: 15px;
+			ul.list-inline{
+				.width-under(767px,{
+                    text-align:center;
+				});
+				li{
+					span{
+						font-size:10px;
+					}a{
+						font-size:10px;
+					}
+				}
+			}
+		}
+		.social{
+			.policy();
+			text-align:left;
+			.list-inline{
+				.width-under(767px,{
+                    text-align:center;
+				});
+				li{
+					padding:0;
+					a{
+						background: #fafafa;
+    					padding: 10px;
+					}
+				}
+			}
+			.quick-contact a{
+				top: -11px;
+			    position: relative;
+			    background: #fafafa;
+			    padding: 8px 6px;
+			}
+		}
+		.footer-nav{
+			ul.list-unstyled{
+				.width-under(767px,{
+                      text-align: center;
+				 });
+				li{
+
+					i{
+						color:rgba(199, 195, 195, 0.83);
+					}
+					.width-under(767px, {
+						&{
+							display:inline-block;
+						}
+                      i{display:none;}
+					});
+					a{
+						padding-left:5px;
+						color: #524f4f;
+						font-size:10px;
+						&:hover{
+							text-decoration:none;
+						}
+					}
+				}
+			}
+		}
+		.footer-top{
+			h3{
+				font-size:14px;
+				font-family:inherit;
+				.width-under(767px, {
+                   text-align:center;
+				});
+			}
+			li{
+				padding-left: 5px;
+			    color: #524f4f;
+			    font-size: 10px;
+			    i{
+			    	padding: 0 4px;
+			    }
+			}
+		}
+	}
+	.width-under(767px, {
+        .footer{
+        	background:red;
+        }
+	});
+}

@@ -1,0 +1,289 @@
+body{
+	font-family:'AvenirLTStd-LightOblique';
+}
+#bdsharma{
+	background:#fafafa;
+	font-family:'MerriweatherSans-Regular';
+	header{
+		margin-top:20px;
+		padding-bottom: 17px;
+		&.sticky-header{
+				position: fixed;
+			    z-index: 999999;
+			    background: #fff;
+			    width: 100%;
+			    top: 0;
+			    padding: 5px 0;
+			    box-shadow: 0px 2px 21px #a9a2a2;
+			    margin-top: 0;
+			    background:#fafafa;
+		}
+		
+
+		.logo{
+	        a{
+	        	width: 133px;
+			    float: left;
+			    text-transform: uppercase;
+			    text-decoration:none;
+			    .width-under(767px, {
+					margin-left: 27px;
+			    });
+				font-family:'AvenirLTStd-LightOblique';
+			    outline:none;
+			    &:hover, &:active, &:visited &:focus{
+			    	text-decoration:none;	
+			    	outline:none;		    	
+			    }
+			   
+	        	span{
+					color: #333;
+				    font-size: 22px;
+				    clear: both;
+				    display: block;
+	    			line-height: 24px;
+	    			font-weight:bold;
+	    			font-family:'AvenirLTStd-LightOblique';
+	        	}
+	        	label{
+	        		text-align:right;
+	        		display:block;
+	        		font-size:10px;
+	        		color:rgb(51, 122, 183);
+	        		font-family:'AvenirLTStd-LightOblique';
+	        	}
+	        }
+		}
+		&.sticky-header{
+			.navigation{
+				.width-under(767px, {
+                   top: 54px !important;
+				});
+			}
+		}
+		.navigation{
+			text-align:center;
+			.width-over(768px, {
+				ul{
+					margin: 0 auto;			
+					&.list-inline{
+					    width: 534px;
+					    padding-top: 10px;
+					    position: relative;
+					    padding-bottom: 10px;
+					    float: right;
+
+					    li{
+					    	padding: 0;
+						    margin: 0;
+						    float: left;
+							position: relative;
+						    &:last-child{
+						    	a{
+	                                border:0;
+						    	 }
+							}
+						    a{
+	
+								background: #ffffff;
+								border-right: 1px solid #e0d7d7;				    
+						    	padding:11px 24px;
+						    	font-family:'AvenirLTStd-LightOblique';
+						    	.fa{
+							    	display:none;
+							    }
+							    
+						    	&:hover{
+						    		text-decoration:none;
+						    	}					    	
+						    	&.active:before{
+			                       	content: "";
+								    background: rgb(51, 122, 183);
+								    width: 100%;
+								    height: 4px;
+								    position: absolute;
+								    top: -10px;
+								    left: -1px;
+
+							    }
+							     &.active{
+							    	.fa{
+							    		display: inline-block;
+									    position: absolute;
+									    top: -13px;
+									    left: 47%;
+									    color: rgb(51, 122, 183);
+									    font-size: 17px;
+							    	}
+							    }
+						    }
+					    }
+					}
+				}
+			});
+			.width-under(767px, {
+				    display:none;
+				    text-align: center;
+				    position: fixed;
+				    top:80px;
+				    background: rgba(255, 255, 255, 0.64);
+				    z-index: 99999999;
+				    height: 100%;
+				    transition:display 2s;
+				
+				//display:none;
+               ul{
+               	 float:right;
+               	 min-width:300px;
+               	 max-width:320px;
+               	 width:100%;
+               	 background: rgb(51, 122, 183);
+			     position: absolute;
+			     right: 0;
+			     height: 100%;
+               	li{
+					display:block;
+					width:100%;
+					padding:0;
+               		a{
+               			width:100%;
+               			display:block;
+               			color:#fff;
+               			border-bottom:1px solid #fff;
+               			padding: 10px 17px;
+    					text-align: left;
+						i.fa.fa-caret-down {
+						    position: absolute;
+						    left: 2px;
+						    transform: rotate(274deg);
+						    font-size:12px;
+						}
+						&.active:before{
+	                       	content: "";
+						    background: #ffffff;
+						    width: 4px;
+						    height: 40px;
+						    position: absolute;
+						    top: 0;
+						    left: 0px;
+
+					    }
+	
+
+               		}
+               		&:last-child{
+               			a{
+               				border-bottom:0;
+               			}
+               		}
+               	}
+               }
+			});
+		}
+	}
+	#nav-icon2{
+	  	width: 33px;
+	    height: 45px;
+	    position: relative;
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    -webkit-transition: 0.5s ease-in-out;
+	    -moz-transition: 0.5s ease-in-out;
+	    -o-transition: 0.5s ease-in-out;
+	    transition: 0.5s ease-in-out;
+	    cursor: pointer;
+	    position:absolute;
+	    right:0;
+	    right: 5%;
+    	top: 6px;
+	    .width-over(767px,{
+ 			display:none;
+	    });
+	}
+	
+	#nav-icon2 span {
+	  display: block;
+	  position: absolute;
+	  height: 4px;
+	  width: 50%;
+	  background: rgb(51, 122, 183);
+	  opacity: 1;
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	  -webkit-transition: .25s ease-in-out;
+	  -moz-transition: .25s ease-in-out;
+	  -o-transition: .25s ease-in-out;
+	  transition: .25s ease-in-out;
+	}
+
+	#nav-icon2 span:nth-child(even) {
+	  left: 50%;
+	  border-radius: 0 9px 9px 0;
+	}
+
+	#nav-icon2 span:nth-child(odd) {
+	  left:0px;
+	  border-radius: 9px 0 0 9px;
+	}
+
+	#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+	  top: 0px;
+	}
+
+	#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+	  top: 8px;
+	}
+
+	#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+	  top: 17px;
+	}
+
+	#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+	  -webkit-transform: rotate(45deg);
+	  -moz-transform: rotate(45deg);
+	  -o-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+
+	#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+	  -webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	  -o-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	}
+
+	#nav-icon2.open span:nth-child(1) {
+	  left: 5px;
+	  top: 7px;
+	}
+
+	#nav-icon2.open span:nth-child(2) {
+	  left: calc(50% - 5px);
+	  top: 7px;
+	}
+
+	#nav-icon2.open span:nth-child(3) {
+	  left: -50%;
+	  opacity: 0;
+	}
+
+	#nav-icon2.open span:nth-child(4) {
+	  left: 100%;
+	  opacity: 0;
+	}
+
+	#nav-icon2.open span:nth-child(5) {
+	  left: 5px;
+      top: 17px;
+	}
+
+	#nav-icon2.open span:nth-child(6) {
+	  left: calc(50% - 5px);
+	  top:17px;
+	}
+
+}

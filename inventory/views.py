@@ -5,10 +5,92 @@ from inventory.models import Item
 
 
 def index(request):
-	items = Item.objects.all()
+	
 	return render(request, 'inventory/index.html', {
-    	'items':items,
+    	'items':'home',
     })
+def service(request):
+	
+	return render(request, 'inventory/service.html', {
+    	'items':'service',
+    })
+def about(request):
+	
+	return render(request, 'inventory/about.html', {
+    	'items':'about',
+    })
+def project(request):
+	
+	return render(request, 'inventory/project.html', {
+    	'items':'project',
+    })
+def complete(request):
+	
+	return render(request, 'inventory/completed-projects.html', {
+    	'items':'complete project',
+    }) 
+def ongoing(request):
+	
+	return render(request, 'inventory/ongoing-projects.html', {
+    	'items':'ongoing project',
+    }) 
+def gallery(request):
+	
+	return render(request, 'inventory/gallery.html', {
+    	'items':'gallery project',
+    })  
+def contact(request):
+	
+	return render(request, 'inventory/contact.html', {
+    	'items':'contact',
+    })
+def contact(request):
+	
+	return render(request, 'inventory/contact.html', {
+    	'items':'contact',
+    }) 
+def contact(request):
+	
+	return render(request, 'inventory/contact.html', {
+    	'items':'contact',
+    })
+def awards(request):
+	
+	return render(request, 'inventory/awards.html', {
+    	'items':'awards',
+    })  
+def location(request):
+	
+	return render(request, 'inventory/location.html', {
+    	'items':'location',
+    })  
+def management(request):
+	
+	return render(request, 'inventory/management.html', {
+    	'items':'management',
+    })  
+def sucess_story(request):
+	
+	return render(request, 'inventory/sucess-story.html', {
+    	'items':'sucess-story',
+    }) 
+def team(request):
+	
+	return render(request, 'inventory/team.html', {
+    	'items':'team',
+    })   
+
+def architecture(request):
+	
+	return render(request, 'inventory/architecture.html', {
+			'item':'architecture',
+		}) 
+
+def interior(request):
+	
+	return render(request, 'inventory/interior.html', {
+		'item':'interior',
+		})  
 
 def item_detail(request, id):
 	try:
